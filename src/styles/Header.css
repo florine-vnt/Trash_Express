@@ -1,0 +1,46 @@
+/* * {
+    border : solid pink 1px; 
+} */
+
+body{
+    background: linear-gradient(90deg,#2B6059, #5f8782);
+}
+
+ .header{
+     display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+    
+h1 {
+    margin-bottom: 0; /* Supprimer la marge en bas */
+    background-image: linear-gradient(45deg, #BB8D4A, #F8ED9F);
+    text-align: center;
+    font-size: 4rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.slogan {
+    margin-top: 0; /* Supprimer la marge en haut */
+    background-image: linear-gradient(45deg, #BB8D4A, #F8ED9F);
+    text-align: center;
+    font-size: 2rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.presentation-text {
+    font-size: 200%;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 2rem;
+    font-family: "Cabin", sans-serif;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(45deg, #BB8D4A, #F8ED9F);
+    font-weight: 600;
+}
