@@ -1,0 +1,54 @@
+* {
+  /* border: solid pink 1px; */
+  box-sizing: border-box;
+}
+
+.dechet-section {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}
+
+.trash-part {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+input {
+  margin: 20px;
+  border-radius: 10px;
+  width: 200px;
+  height: 45px;
+}
+
+ul {
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  height: 60vh;
+  width: 100%;
+  gap: 100px;
+  background-color: white;
+}
+
+.trash-card {
+  width: 35vw;
+  flex-wrap: wrap;
+  background-color: white;
+  gap: 10px;
+  list-style: none;
+  text-decoration: none;
+}
+
+.trash-content {
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(45deg, #bb8d4a, #f8ed9f);
+  border-radius: 10px;
+  width: 400px;
+  color: black;
+}
+
+img {
+  width: 100px;
+}
