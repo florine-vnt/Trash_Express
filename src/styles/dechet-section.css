@@ -1,43 +1,47 @@
 * {
   /* border: solid pink 1px; */
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 .dechet-section {
   display: grid;
   grid-template-columns: 2fr 3fr;
+  background: linear-gradient(90deg, #bcbcbc, #bababac6);
+  border-radius: 20px;
+  height: 99vh;
 }
 
 .trash-part {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
 }
 
 input {
-  margin: 20px;
   border-radius: 10px;
-  width: 200px;
-  height: 45px;
+  width: 400px;
+  height: 50px;
 }
 
 ul {
-  overflow: auto;
+  overflow-y: auto;
+  scrollbar-color: #f8ed9f;
+  -webkit-scrollbar: 100px;
   display: flex;
   justify-content: center;
-  height: 60vh;
   width: 100%;
-  gap: 100px;
-  background-color: white;
+  height: 80vh;
+  gap: 50px;
 }
 
 .trash-card {
   width: 35vw;
   flex-wrap: wrap;
-  background-color: white;
-  gap: 10px;
+  background: none;
   list-style: none;
-  text-decoration: none;
+  color: black;
 }
 
 .trash-content {
@@ -45,10 +49,20 @@ ul {
   justify-content: center;
   background-image: linear-gradient(45deg, #bb8d4a, #f8ed9f);
   border-radius: 10px;
-  width: 400px;
+  width: 90%;
+  height: 80px;
   color: black;
 }
 
-img {
-  width: 100px;
+.leaflet-container {
+  height: 100vh;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.trash-card:link {
+  text-decoration: none;
+  color: aliceblue;
 }

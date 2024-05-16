@@ -2,7 +2,9 @@
 import { NavLink, useLoaderData } from "react-router-dom";
 import { useState } from "react";
 
+
 import DechetCard from "./DechetCard";
+import Map from "./Map";
 import "../styles/dechet-section.css";
 
 function DechetSection() {
@@ -14,13 +16,12 @@ function DechetSection() {
     setText(e.target.value.toLowerCase());
   }
 
-  //   const filteredData = data.filter((el) =>
-  //     el.name.toLowerCase().includes(text)
-  // );
+  const filteredData = (text !== "" ? (data.filter((trash) => trash.commune.toLowerCase().includes(text) || trash.departement.toString().includes(text))) : data);
 
   return (
     <section className="dechet-section">
       <div className="trash-part">
+        <h2>Trouvez la dechetterie de vos rêves</h2>
         <input
           type="texte"
           placeholder="Trouvez la dechetterie de vos rêves"
@@ -31,16 +32,16 @@ function DechetSection() {
 
         <ul>
           <li className="trash-card">
-              {data.map((trash) => (
-            <NavLink className="trash-card" to={`/detail/${trash.id}`}>
+            {filteredData.map((trash) => (
+              <NavLink className="trash-card" to={`/detail/${trash.id}`}>
                 <DechetCard key={trash.id} data={trash} />
-            </NavLink>
-              ))}
+              </NavLink>
+            ))}
           </li>
         </ul>
       </div>
 
-      <img src="https://stickair.com/35378-large_default/carte-de-france.jpg"></img>
+      <Map/>
     </section>
   );
 }

@@ -10,6 +10,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   place-items: center;
+  height: 90vh;
 }
 
 h1 {
