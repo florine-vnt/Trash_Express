@@ -1,0 +1,16 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  margin: 2%;
+  outline: none;
+  background: linear-gradient(45deg, #bb8d4a, #b8a729);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
