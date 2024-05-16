@@ -7,3 +7,7 @@
 .detail-page>img{
     height : 300px;
 }
+
+.detail-page>p{
+    font-family: Roboto Condensed;
+}
