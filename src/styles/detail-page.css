@@ -6,6 +6,10 @@
 
 .detail-page>img{
     height : 300px;
+    /* border :solid; */
+    /* border-width: 15px; */
+    /* border-color: #ffe268; */
+    border-radius: 5px;
 }
 
 .detail-page>p{

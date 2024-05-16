@@ -10,13 +10,13 @@ const Header = () => {
         <h1> TRASH EXPRESS </h1>
         <h2 className='slogan'>
             {/* Sur les traces des meilleurs endroits pour jeter votre PC */}
-            A la découverte des dépots sauvages 
+            À la découverte des dépôts sauvages 
         </h2>
       </div>
       <div className="right-section">
         <p className="presentation-text">Trouver les meilleurs endroits pour jeter votre PC. </p>
         <p className="presentation-text">
-        Nous avons sélectionné des endroits exceptionnels où vos ordinateurs pourront reposer éternellement</p>
+        Nous avons sélectionné des endroits exceptionnels où vos ordinateurs pourront reposer éternellement.</p>
       </div>
     </div>
   );
