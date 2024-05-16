@@ -6,8 +6,8 @@ function DetailPage() {
 
   return (
     <figure className="detail-page">
+      <h2>Zoom sur la décharge de {data.commune}</h2>
       <img src={data.image} alt="photo d'une décharge" />
-      <p>{data.commune}, {data.departement}</p>
       <p>" {data.avis} "</p>
     </figure>
   )
