@@ -1,0 +1,9 @@
+.detail-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.detail-page>img{
+    height : 300px;
+}
