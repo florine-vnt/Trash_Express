@@ -21,6 +21,7 @@ const router = createBrowserRouter([
       {
         path: "/detail/:id",
         element: <DetailPage />,
+        loader: ({params}) => fetch(`https://my-json-server.typicode.com/florine-vnt/api-trash/dechetterie/${params.id}`)
       },
     ],
   },
