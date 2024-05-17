@@ -27,8 +27,8 @@ const But = () => {
             produits, nous pouvons prolonger leur utilité et réduire la quantité
             de déchets envoyés dans les décharges. De plus, privilégier les
             produits reconditionnés peut également contribuer à réduire la
-            demande de nouvelles ressources, ce qui a un impact positif sur
-            l'environnement.
+            demande de nouvelles ressources, ce qui diminue notre impact négatif
+            sur l'environnement.
           </p>
         </h2>
       </article>
