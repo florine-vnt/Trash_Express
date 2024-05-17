@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:30px;
+    gap:40px;
 }
 .detail-page>h2{
     margin-bottom: 0;
@@ -17,12 +17,14 @@
     border-radius: 5px;
 }
 .detail-page>figcaption{
-    background-color: gray;
+    background: linear-gradient(90deg, #bcbcbc59, #bababa70);
+    border-radius: 5px;
 }
 .detail-page>figcaption>p{
     display: flex;
     flex-wrap: wrap;
-    width : 500px;
+    text-align: center;
+    width : 1500px;
     font-size: 2.5rem;
     -webkit-background-clip: text;
     background-image: linear-gradient(45deg, #bb8d4a, #f8ed9f);
