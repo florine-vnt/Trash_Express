@@ -19,9 +19,16 @@ h2 {
   margin: 2%;
 }
 
-p {
+.laLoiCmoi p {
   font-family: "Roboto Condensed", sans-serif;
-  font-size: 30px;
+  font-size: 120%;
   font-weight: 700;
   margin: 2%;
+}
+
+.laLoiCmoi img {
+  padding-top: 5%;
+  width: 50%;
+  display: block;
+  margin: auto;
 }
