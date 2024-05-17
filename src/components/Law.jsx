@@ -23,7 +23,7 @@ function Law() {
           <p>
             Si vous payez immédiatement ou dans les 45 jours suivant le constat
             d'infraction (ou l'envoi de l'avis d'infraction), l'amende est de
-            135 €.
+            135€.
           </p>
           <p>
             Si vous payez après ce délai de 45 jours, l'amende est de 375 €.
