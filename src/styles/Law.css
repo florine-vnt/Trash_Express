@@ -25,3 +25,10 @@ p {
   font-weight: 700;
   margin: 2%;
 }
+
+.laLoiCmoi img {
+  padding-top: 5%;
+  width: 50%;
+  display: block;
+  margin: auto;
+}

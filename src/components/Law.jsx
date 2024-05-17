@@ -1,10 +1,14 @@
 import React from "react";
 import "../styles/Law.css";
+import marianne2 from "../assets/marianne2.png";
 
 function Law() {
   return (
     <>
       <article className="laLoiCmoi">
+        <div>
+          <img src={marianne2} alt="logo" />
+        </div>
         <section>
           <h2>Ce que dit la loi:</h2>
           <p>
