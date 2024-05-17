@@ -22,12 +22,14 @@ function insertLineBreaks(text, maxLength) {
 function PlaneteEnvironnement () {
     let randomImage = image_planete[Math.floor(Math.random() * image_planete.length)]
     let randomData = data_environnement[Math.floor(Math.random() * data_environnement.length)]
-    let formattedFact = insertLineBreaks(randomData.fact, 60);
+    let formattedFact = insertLineBreaks(randomData.fact, 55);
 
     return (
         <section className="planete-environnement">
             <img src={randomImage.image} alt="illustration planète personnage" />
+            <div className="bubble">
             <p dangerouslySetInnerHTML={{ __html: `${formattedFact} <br/>Source : ${randomData.source}` }}></p>
+            </div>
         </section>
     )
 }

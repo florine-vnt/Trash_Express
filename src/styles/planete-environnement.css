@@ -1,4 +1,4 @@
-.planete-environnement{
+/* .planete-environnement{
     display: flex;
     justify-content: center;
 }
@@ -9,4 +9,58 @@
 
 .planete-environnement>img{
     width:350px;
+} */
+
+.planete-environnement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+}
+
+.planete-environnement > img {
+    width: 350px;
+}
+
+.bubble {
+    position: relative;
+    background: #f0f0f0;
+    border: 2px solid #000;
+    border-radius: 25px;
+    padding: 10px;
+    max-width: 300px;
+    margin-top: 20px;
+}
+
+.bubble::after {
+    content: '';
+    position: absolute;
+    top: 50%; /* Adjust the position vertically */
+    left: -20px; /* Position it to the left of the bubble */
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-right-color: #f0f0f0; /* Color of the bubble background */
+    border-left: 0;
+    margin-top: -10px;
+}
+
+.bubble::before {
+    content: '';
+    position: absolute;
+    top: 50%; /* Adjust the position vertically */
+    left: -22px; /* Position it to the left of the bubble */
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border: 12px solid transparent;
+    border-right-color: #000; /* Color of the bubble border */
+    border-left: 0;
+    margin-top: -12px;
+}
+
+.bubble > p {
+    font-size: 25px;
+    margin: 0;
 }
