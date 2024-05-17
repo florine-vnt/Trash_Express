@@ -1,18 +1,23 @@
 .important {
-    font-size: 2rem;
-    display: flex;
-    justify-content: center;
-    font-family: "Roboto Condensed", sans-serif;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto Condensed", sans-serif;
 }
-.articlebut{
-    border: solid red 7px;
-    background-color: white;
-    display: flex;
-    margin-right: 10%;
-    margin-left: 10%;
+.articlebut {
+  border: solid red 7px;
+  background-color: white;
+  display: flex;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-bottom: 3%;
 }
 .but {
-    margin-left: 5%;
-    margin-right: 5%;
-    font-family: "Roboto Condensed", sans-serif;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.articlebut p {
+  font-size: 55%;
 }
