@@ -1,4 +1,11 @@
+import Law from "../components/Law";
+
 function DisclaimerPage() {
-  return <></>;
+  return (
+    <>
+      <Law />
+    </>
+  );
 }
+
 export default DisclaimerPage;
