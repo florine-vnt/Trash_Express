@@ -12,6 +12,12 @@ body {
   place-items: center;
 }
 
+.logo {
+    width: 40vh;
+    display: flex;
+    margin-left: 10%
+}
+
 h1 {
   margin-bottom: 0; /* Supprimer la marge en bas */
   background-image: linear-gradient(45deg, #bb8d4a, #f8ed9f);
