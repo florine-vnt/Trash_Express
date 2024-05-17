@@ -77,11 +77,13 @@ ul {
   height: 100%;
 }
 
-/* ::-webkit-scrollbar {
-  display: none;
-} */
-
 .trash-card:link {
   text-decoration: none;
   color: aliceblue;
+}
+
+#no-result {
+  border-radius: 10px;
+  width: 35vw;
+  height: auto;
 }
