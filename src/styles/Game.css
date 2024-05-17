@@ -1,0 +1,130 @@
+.game {
+    width: 600px;
+    height: 200px;
+    margin: auto;
+    position: relative;
+  }
+  
+  .game-over-box {
+    position: fixed;
+    /* transform: translate(-50%, -50%); Pour centrer précisément la boîte */
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }   
+    
+  /* #dino {
+    width: 50px;
+    height: 50px;
+    background-image: url(img/trex.png);
+    background-size: 50px 50px;
+    position: absolute;
+    top: 150px;
+  } */
+  
+#dino{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    background-image: url("img/cactus.png");
+    background-size: 50px 50px;
+}
+
+  .jump {
+    animation: jump 0.3s linear;
+  }
+  
+  @keyframes jump {
+    0% {
+      top: 150px;
+    }
+  
+    30% {
+      top: 130px;
+    }
+  
+    50% {
+      top: 80px;
+    }
+  
+    80% {
+      top: 130px;
+    }
+  
+    100% {
+      top: 150px;
+    }
+  }
+  
+  #cactus {
+    width: 20px;
+    height: 40px;
+    position: absolute;
+    bottom: 0; 
+    left: 50%; 
+    transform: translateX(-50%);
+    background-image: url("img/cactus.png");
+    background-size: 20px 40px;
+    animation: block 1s infinite linear;
+  }
+  
+  @keyframes block {
+    0% {
+      left: 580px;
+    }
+  
+    100% {
+      left: -20px;
+    }
+  }
+  .game-container {
+    position: relative;
+  }
+  
+  .game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: black;
+    font-weight: bold;
+    background: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 1;
+  }
+  .game-over-box {
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+  }
+  
+  .game-over-box > div {
+    font-size: 24px;
+    color: #FF0000; 
+    margin-bottom: 10px;
+  }
+  
+  .game-over-box button {
+    padding: 10px 20px;
+    background-color: #FF0000; 
+    color: white; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+  }
+  
+  .game-over-box button:hover {
+    background-color: #CC0000; 
+  }
