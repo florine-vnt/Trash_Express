@@ -5,9 +5,11 @@ import boussole from "../assets/boussole2.png";
 function Header() {
 
   function handleClick() {
-    const target = document.getElementsById("end")
-    target.scrollIntoView({ behavior: "smooth" });
-  }
+    const target = document.querySelector(".dechet-section");
+    if (target) {
+        target.scrollIntoView({ behavior: "smooth" });
+    }
+}
 
   return (
     <section className="header">
@@ -25,10 +27,16 @@ function Header() {
           Nous avons sélectionné, pour vous, des lieux exceptionnels où vos
           ordinateurs pourront reposer éternellement
         </p>
-      <button onClick={handleClick}>Ceci est button</button>
+        <a
+          role="button"
+          className="btn-next-section"
+          onClick={handleClick}
+        ></a>
       </div>
+
     </section>
   );
 }
+
 
 export default Header;

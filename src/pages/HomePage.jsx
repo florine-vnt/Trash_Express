@@ -9,7 +9,6 @@ function HomePage() {
     <>
       <Header />
       <DechetSection />
-      <p id="end">Ici</p>
     </>
   );
 }

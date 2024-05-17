@@ -10,6 +10,7 @@
   background: linear-gradient(90deg, #bcbcbc, #bababac6);
   border-radius: 20px;
   height: 99vh;
+  overflow-y: hidden ;
 }
 
 .trash-part {
@@ -26,14 +27,13 @@ input {
 }
 
 ul {
-  overflow-y: auto;
-  scrollbar-color: #f8ed9f;
-  -webkit-scrollbar: 100px;
   display: flex;
   justify-content: center;
+  overflow-y: auto;
+  scrollbar-color: #f8ed9f;
   width: 100%;
   height: 80vh;
-  gap: 50px;
+  gap: 20px;
 }
 
 .trash-card {
@@ -55,7 +55,13 @@ ul {
 }
 
 .leaflet-container {
-  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 20px;
+  margin: 16px;
+  height: 90vh;
 }
 
 ::-webkit-scrollbar {
@@ -66,3 +72,4 @@ ul {
   text-decoration: none;
   color: aliceblue;
 }
+
