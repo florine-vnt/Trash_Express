@@ -6,7 +6,6 @@ function DetailPage() {
   const data = useLoaderData();
 
   let randomDatas = data_names[Math.floor(Math.random() * data_names.length)]
-  console.log(randomDatas)
 
   return (
     <figure className="detail-page">
