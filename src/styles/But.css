@@ -1,0 +1,18 @@
+.important {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto Condensed", sans-serif;
+}
+.articlebut{
+    border: solid red 7px;
+    background-color: white;
+    display: flex;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+.but {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: "Roboto Condensed", sans-serif;
+}

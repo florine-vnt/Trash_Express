@@ -14,7 +14,7 @@ const Header = () => {
         </h2>
       </div>
       <div className="right-section">
-        <p className="presentation-text">Trouvez les meilleurs endroits pour jeter votre PC et enfin déconnecter. </p>
+        <p className="presentation-text">Trouver les meilleurs endroits pour jeter votre PC et enfin vous déconnecter. </p>
         <p className="presentation-text">
         Nous avons sélectionné des endroits exceptionnels où vos ordinateurs pourront reposer éternellement.</p>
       </div>

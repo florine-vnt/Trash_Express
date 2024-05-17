@@ -1,9 +1,11 @@
+import But from '../components/But';
 import Law from "../components/Law";
 
 function DisclaimerPage() {
   return (
     <>
-      <Law />
+    <But />
+    <Law />
     </>
   );
 }
