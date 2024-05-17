@@ -1,0 +1,20 @@
+.gif{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gif>img{
+width : 1500px;
+}
+
+.gif>p{
+    font-size: 5rem;
+    font-family: Roboto Condensed, Sans Serif;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(45deg, #bb8d4a, #f8ed9f);
+    -webkit-text-fill-color: transparent;
+    font-family: "Roboto Condensed", sans-serif;
+    background-color: #bb8d4a;
+}
