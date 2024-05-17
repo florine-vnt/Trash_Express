@@ -5,6 +5,7 @@ import { useState } from "react";
 import DechetCard from "./DechetCard";
 import Map from "./Map";
 import "../styles/dechet-section.css";
+import noresult from "../assets/no_result.gif";
 
 function DechetSection() {
   const data = useLoaderData();
@@ -34,6 +35,7 @@ function DechetSection() {
           />
 
           <ul>
+            {filteredData.length ===0 ? <img id="no-result" src={noresult} /> :
             <li className="trash-card">
               {filteredData.map((trash) => (
                 <NavLink className="trash-card" to={`/detail/${trash.id}`}>
@@ -41,6 +43,7 @@ function DechetSection() {
                 </NavLink>
               ))}
               </li>
+}
           </ul>
         </div>
 

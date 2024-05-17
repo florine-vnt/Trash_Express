@@ -44,20 +44,17 @@ ul {
   display: flex;
   justify-content: center;
   overflow-y: scroll;
-  height: 80vh;
-
+  height: 70vh;
 }
 
-
 .trash-card {
-  display:flex;
+  display: flex;
   width: 35vw;
   flex-direction: column;
   gap: 20px;
   background: none;
   list-style: none;
   color: black;
-  
 }
 
 .trash-content {
@@ -75,16 +72,18 @@ ul {
   justify-content: center;
   align-items: center;
   border-radius: 20px;
-  margin-left : 50px;
-  width : 75% content-box;
+  margin-left: 50px;
+  width: 75% content-box;
   height: 100%;
 }
-
-/* ::-webkit-scrollbar {
-  display: none;
-} */
 
 .trash-card:link {
   text-decoration: none;
   color: aliceblue;
+}
+
+#no-result {
+  border-radius: 10px;
+  width: 35vw;
+  height: auto;
 }
