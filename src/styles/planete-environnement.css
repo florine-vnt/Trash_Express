@@ -1,0 +1,12 @@
+.planete-environnement{
+    display: flex;
+    justify-content: center;
+}
+
+.planete-environnement>p {
+    font-size: 20px;
+}
+
+.planete-environnement>img{
+    width:350px;
+}
