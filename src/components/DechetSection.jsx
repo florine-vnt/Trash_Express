@@ -35,15 +35,17 @@ function DechetSection() {
           />
 
           <ul>
-            {filteredData.length ===0 ? <img id="no-result" src={noresult} /> :
-            <li className="trash-card">
-              {filteredData.map((trash) => (
-                <NavLink className="trash-card" to={`/detail/${trash.id}`}>
-                  <DechetCard key={trash.id} data={trash} />
-                </NavLink>
-              ))}
+            {filteredData.length === 0 ? (
+              <img id="no-result" src={noresult} />
+            ) : (
+              <li className="trash-card">
+                {filteredData.map((trash) => (
+                  <NavLink className="trash-card" to={`/detail/${trash.id}`}>
+                    <DechetCard key={trash.id} data={trash} />
+                  </NavLink>
+                ))}
               </li>
-}
+            )}
           </ul>
         </div>
 
