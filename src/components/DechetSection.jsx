@@ -16,7 +16,7 @@ function DechetSection() {
     setText(e.target.value.toLowerCase());
   }
 
-  const filteredData = (text !== "" ? (data.filter((trash) => trash.commune.toLowerCase().includes(text) || trash.departement.toString().includes(text))) : data);
+  const filteredData = (text !== "" ? (data.filter((trash) => trash.commune.toLowerCase().includes(text) )) : data);
 
   return (
     <section className="dechet-section">
@@ -41,7 +41,7 @@ function DechetSection() {
         </ul>
       </div>
 
-      <Map/>
+      <Map filteredData={filteredData}/>
     </section>
   );
 }
