@@ -4,28 +4,29 @@
     align-items: center;
     gap:30px;
 }
-
 .detail-page>h2{
     margin-bottom: 0;
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     background-image: linear-gradient(45deg, #bb8d4a, #f8ed9f);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: "Roboto Condensed", sans-serif;
 }
-
 .detail-page>img{
-    height : 300px;
-    /* border :solid; */
-    /* border-width: 15px; */
-    /* border-color: #ffe268; */
+    height : 600px;
     border-radius: 5px;
 }
-
-.detail-page>p{
-    font-size: 1.5rem;
+.detail-page>figcaption{
+    background-color: gray;
+}
+.detail-page>figcaption>p{
+    display: flex;
+    flex-wrap: wrap;
+    width : 500px;
+    font-size: 2.5rem;
     -webkit-background-clip: text;
     background-image: linear-gradient(45deg, #bb8d4a, #f8ed9f);
     -webkit-text-fill-color: transparent;
     font-family: "Roboto Condensed", sans-serif;
+    background-color: #bb8d4a;
 }
