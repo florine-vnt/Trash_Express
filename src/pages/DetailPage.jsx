@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { useLoaderData } from "react-router-dom";
 import "../styles/detail-page.css"
 import { data_names } from "../data";
@@ -13,7 +14,6 @@ function DetailPage() {
       <img src={data.image} alt="photo d'une décharge" />
       <p>"{data.avis}" {randomDatas.name}, {randomDatas.date}.</p>
     </figure>
-  )
-  
+  );
 }
 export default DetailPage;

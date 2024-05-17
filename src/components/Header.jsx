@@ -1,25 +1,42 @@
-import React from 'react';
-import '../styles/Header.css';
-import boussole from '../assets/boussole2.png';
+/* eslint-disable react/prop-types */
+import "../styles/Header.css";
+import boussole from "../assets/boussole2.png";
 
-const Header = () => {
+function Header() {
+
+  function handleClick() {
+    const target = document.querySelector(".dechet-section");
+    if (target) {
+        target.scrollIntoView({ behavior: "smooth" });
+    }
+}
+
   return (
-    <div className="header">
+    <section className="header">
       <div className="left-section">
-        <img src={boussole} alt="Logo Trash Express" className="logo"/>
+        <img src={boussole} alt="Logo Trash Express" className="logo" />
         <h1> TRASH EXPRESS </h1>
-        <h2 className='slogan'>
-            {/* Sur les traces des meilleurs endroits pour jeter votre PC */}
-            À la découverte des dépôts sauvages 
-        </h2>
+        <h2 className="slogan">A la découverte des dépots sauvages</h2>
       </div>
       <div className="right-section">
-        <p className="presentation-text">Trouver les meilleurs endroits pour jeter votre PC et enfin vous déconnecter. </p>
         <p className="presentation-text">
-        Nous avons sélectionné des endroits exceptionnels où vos ordinateurs pourront reposer éternellement.</p>
+          Trouvez les meilleurs endroits pour jeter votre PC et enfin vous
+          déconnecter{" "}
+        </p>
+        <p className="presentation-text">
+          Nous avons sélectionné, pour vous, des lieux exceptionnels où vos
+          ordinateurs pourront reposer éternellement
+        </p>
+        <a
+          role="button"
+          className="btn-next-section"
+          onClick={handleClick}
+        ></a>
       </div>
-    </div>
+
+    </section>
   );
 }
+
 
 export default Header;

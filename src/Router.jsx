@@ -13,6 +13,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <HomePage />,
+        loader: () =>
+          fetch(
+            `https://my-json-server.typicode.com/florine-vnt/api-trash/dechetterie/`
+          ),
       },
       {
         path: "/disclaimer",
@@ -21,7 +25,10 @@ const router = createBrowserRouter([
       {
         path: "/detail/:id",
         element: <DetailPage />,
-        loader: ({params}) => fetch(`https://my-json-server.typicode.com/florine-vnt/api-trash/dechetterie/${params.id}`)
+        loader: ({ params }) =>
+          fetch(
+            `https://my-json-server.typicode.com/florine-vnt/api-trash/dechetterie/${params.id}`
+          ),
       },
     ],
   },
